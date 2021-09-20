@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"
+        android:background="@color/main">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/bowlby_one"
+            android:text="HEALTH\n CALC"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/iv_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imc64"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/tv_titulo"
+            android:layout_alignBottom="@id/tv_titulo"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_wave_top"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:src="@drawable/wave_down"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/rl_header"
+        />
+
+    <ImageView
+        android:id="@+id/iv_wave_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/wave_up"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/allerta"
+        android:text="Desenvolvido por DS2T-A"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main"
+        android:layout_below="@id/iv_wave_top"
+        android:layout_above="@id/iv_wave_bottom"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faça Login Para continuar"/>
+
+        
+
+    </LinearLayout>
+
+</RelativeLayout>
