@@ -10,4 +10,8 @@
     <string name="login_esqueci">Esqueci a senha</string>
     <string name="login_nao_tem_conta">Não tem uma conta?</string>
     <string name="login_criar_conta">Criar uma conta agora</string>
+    <string name="cadastro_et_nome">Nome</string>
+    <string name="cadastro_et_profissao">Profissão</string>
+    <string name="cadastro_et_altura">Altura</string>
+    <string name="cadastro_et_data_nascimento">Data de Nascimento</string>
 </resources>

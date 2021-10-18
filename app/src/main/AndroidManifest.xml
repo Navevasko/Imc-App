@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/burn64"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImcApp">
-        <activity android:name=".DashBoardActivity"></activity>
+        <activity android:name=".NovoUsuarioActivity"></activity>
+        <activity android:name=".DashBoardActivity" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
