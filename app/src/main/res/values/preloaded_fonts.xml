@@ -4,5 +4,7 @@
         <item>@font/allerta</item>
         <item>@font/bowlby_one</item>
         <item>@font/contrail_one</item>
+        <item>@font/montserrat_subrayada</item>
+        <item>@font/montserrat_subrayada_bold</item>
     </array>
 </resources>

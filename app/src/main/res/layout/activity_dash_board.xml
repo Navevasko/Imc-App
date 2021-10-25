@@ -40,7 +40,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Singer"
+            android:text="@string/dashboard_profissao"
             android:layout_gravity="center_horizontal"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             android:textColor="@color/white"
@@ -99,7 +99,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="IMC"
+                android:text="@string/dashboard_imc"
                 android:gravity="center"
                 android:textAppearance="@style/dashboard_label"
                 android:layout_weight="1"/>
@@ -107,7 +107,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="NDC"
+                android:text="@string/dashboard_ndc"
                 android:gravity="center"
                 android:textAppearance="@style/dashboard_label"
                 android:layout_weight="1"/>
@@ -115,7 +115,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Idade"
+                android:text="@string/dashboard_idade"
                 android:gravity="center"
                 android:textAppearance="@style/dashboard_label"
                 android:layout_weight="1"/>
@@ -123,7 +123,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Peso"
+                android:text="@string/dashboard_peso"
                 android:gravity="center"
                 android:textAppearance="@style/dashboard_label"
                 android:layout_weight="1"/>
@@ -131,7 +131,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Altura"
+                android:text="@string/dashboard_altura"
                 android:gravity="center"
                 android:textAppearance="@style/dashboard_label"
                 android:layout_weight="1"/>
@@ -179,14 +179,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pesar Agora"
+                            android:text="@string/dashboard_pesar"
                             style="@style/card_titulo"
                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mantenha seu peso atualizado"/>
+                            android:text="@string/dashboard_peso_atualizado"/>
 
                     </LinearLayout>
 
@@ -230,14 +230,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Rever histórico"
+                            android:text="@string/dashboard_historico"
                             style="@style/card_titulo"
                             />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Reveja suas conquistas"/>
+                            android:text="@string/dashboard_conquistas"/>
 
                     </LinearLayout>
 

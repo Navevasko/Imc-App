@@ -4,12 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/burn64"
+        android:icon="@drawable/ic_app"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/burn64"
+        android:roundIcon="@drawable/ic_app"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImcApp">
-        <activity android:name=".NovoUsuarioActivity"></activity>
+        <activity
+            android:name=".NovoUsuarioActivity"
+            android:label="@string/Cadastro_title"></activity>
         <activity android:name=".DashBoardActivity" />
         <activity
             android:name=".MainActivity"

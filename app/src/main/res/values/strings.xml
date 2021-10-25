@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">Imc App</string>
+    <string name="app_name">Health Calc</string>
 
     <string name="Login_title">Login</string>
+    <string name="Cadastro_title">Profile</string>
     <string name="Login_subtitle">Faça Login para continuar</string>
     <string name="Login_et_email">E-mail</string>
     <string name="Login_et_password">Senha</string>
@@ -14,4 +15,20 @@
     <string name="cadastro_et_profissao">Profissão</string>
     <string name="cadastro_et_altura">Altura</string>
     <string name="cadastro_et_data_nascimento">Data de Nascimento</string>
+    <string name="dashboard_imc">IMC</string>
+    <string name="dashboard_ndc">NDC</string>
+    <string name="dashboard_idade">Idade</string>
+    <string name="dashboard_peso">Peso</string>
+    <string name="dashboard_altura">Altura</string>
+    <string name="dashboard_pesar">Pesar Agora</string>
+    <string name="dashboard_peso_atualizado">Mantenha seu peso atualizado</string>
+    <string name="dashboard_conquistas">Reveja suas conquistas</string>
+    <string name="dashboard_historico">Rever histórico</string>
+    <string name="dashboard_profissao">Singer</string>
+    <string name="cadastro_tv_dados">Dados Pessoais</string>
+    <string name="cadastro_tv_dados_pessoais">Dados para autenticação</string>
+    <string name="sexo">Sexo</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="trocar_foto">Trocar Foto</string>
 </resources>
