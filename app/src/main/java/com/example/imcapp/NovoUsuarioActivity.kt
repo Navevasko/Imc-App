@@ -6,10 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.DatePicker
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.RadioGroup
+import android.widget.*
 import java.util.*
 
 class NovoUsuarioActivity : AppCompatActivity() {
@@ -40,9 +37,6 @@ class NovoUsuarioActivity : AppCompatActivity() {
         //Criar um calendário
 
         // *** Obter a data atual (hoje)
-
-
-
 
         // Colocar um Listener de click no editText Data de Nascimento para abrir o calendário (DatePicker)
 
@@ -87,7 +81,31 @@ class NovoUsuarioActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         if(validarCampos()) {
-            // Gravar os dados
+            // Gravar os dados no SharedPreferences
+
+                //Criação de uma variável para indicar onde fica o arquivo. o "getSharedPreferences" é usado para criar ou abrir um diretório aonde todas as informações serão armazenadas
+            val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
+
+            // Criação da variável para inserir, apagar ou atualizar os dados
+            val editor = arquivo.edit()
+
+            // editor = variável de edição criada acima. ".put'Tipodedado'" = usado para inserir um dado dentro do diretório
+            editor.putString("email", editEmail.text.toString())
+            editor.putString("senha", editSenha.text.toString())
+            editor.putString("nome", editNome.text.toString())
+            editor.putString("profissao", editProfissao.text.toString())
+            editor.putString("Nascimento", editDataNascimento.text.toString())
+            editor.putFloat("altura", editAltura.text.toString().toFloat())
+            editor.putString("sexo", if(rdoMasc.isChecked) "M" else "F")
+
+            //Aplica tudo
+            editor.apply()
+
+            Toast.makeText(this, "Usuário cadastrado com sucesso!", Toast.LENGTH_SHORT).show()
+
+            // Fecha essa tela da aplicação
+            finish()
+
         }
         else {
             // Não gravar nada
@@ -110,7 +128,30 @@ class NovoUsuarioActivity : AppCompatActivity() {
             valido = false
         }
 
+        if(editNome.text.isEmpty()) {
+            editNome.error = "O Nome é obrigatório"
+            valido = false
+        }
+
+        //Aqui, o "!" é usado para fazer a operação contrária. Exemplo: !rdoFem.isChecked() = "O rdoFem !NÃO! está marcado?"
+        if(!rdoFem.isChecked() && !rdoMasc.isChecked) {
+            editAltura.error = "Escolha um Gênero"
+            valido = false
+        }
+
+        if(editAltura.text.isEmpty()) {
+            editAltura.error = "A Altura é obrigatória"
+            valido = false
+        }
+
+        if(editDataNascimento.text.isEmpty()) {
+            editDataNascimento.error = "A Data de Nascimento é obrigatória"
+            valido = false
+        }
+
         return valido
 
     }
+    //SQLite é um banco de dados instalado em todos os dispositivos que não são pcs ou notebooks. Ele utiliza todos os comandos SQL
+    //Além disso, existe o SharedPreferences, que é usado pra armazenar poucas informações. É em formato de XML
 }
