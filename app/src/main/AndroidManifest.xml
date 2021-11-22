@@ -12,6 +12,9 @@
         <activity
             android:name=".NovoUsuarioActivity"
             android:label="@string/Cadastro_title"></activity>
+        <activity
+            android:name=".NovoPesoActivity"
+            android:label="@string/Cadastro_title"></activity>
         <activity android:name=".DashBoardActivity" />
         <activity
             android:name=".MainActivity"

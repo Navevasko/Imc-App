@@ -31,4 +31,13 @@
     <string name="feminino">Feminino</string>
     <string name="masculino">Masculino</string>
     <string name="trocar_foto">Trocar Foto</string>
+    <string name="info_peso">Mantenha seu peso sempre atualizado, assim você poderá acompanhar sua evolução</string>
+    <string name="data_pesagem">Data da pesagem:</string>
+    <string name="dados_pesagem_title">Dados da sua pesagem</string>
+    <string name="peso_title">Vamos nos pesar?</string>
+    <string-array name="spinner_list">
+        <item> Atividade Leve </item>
+        <item> Atividade Moderada </item>
+        <item> Atividade Intesa </item>
+    </string-array>
 </resources>

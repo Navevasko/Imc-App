@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/save/baseline_save_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/accessibility_new/baseline_accessibility_new_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,10 +33,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="assetSourceType" value="FILE" />
-                            <entry key="color" value="ff86d6" />
-                            <entry key="outputName" value="ic_app" />
-                            <entry key="sourceFile" value="C:\Users\21193389\AndroidStudioProjects\ImcApp\app\src\main\res\drawable\app.svg" />
+                            <entry key="color" value="7da453" />
+                            <entry key="outputName" value="accessibility_40" />
+                            <entry key="sourceFile" value="C:\Users\21193389\Downloads\Smartwatch-amico.svg" />
                           </map>
                         </option>
                       </PersistentState>

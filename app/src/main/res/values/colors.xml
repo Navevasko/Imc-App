@@ -10,5 +10,6 @@
     <color name="main">#aed581</color>
     <color name="green_icon">#B3FF59</color>
     <color name="secondary">#7da453</color>
+    <color name="text">#5F7C3F</color>
     <color name="gradient">#C7E4A4</color>
 </resources>

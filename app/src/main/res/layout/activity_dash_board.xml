@@ -156,6 +156,7 @@
                 app:cardCornerRadius="8dp">
 
                 <RelativeLayout
+                    android:id="@+id/pesar_agora"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/main">
