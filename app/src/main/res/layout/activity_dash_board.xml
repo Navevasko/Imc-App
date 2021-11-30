@@ -61,9 +61,10 @@
                 android:layout_weight="1"/>
 
             <TextView
+                android:id="@+id/text_imcd"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="1980"
+                android:text=""
                 android:gravity="center"
                 android:textAppearance="@style/dashboard_values"
                 android:layout_weight="1"/>
@@ -78,9 +79,10 @@
                 android:layout_weight="1"/>
 
             <TextView
+                android:id="@+id/tv_peso"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="57"
+                android:text=""
                 android:gravity="center"
                 android:textAppearance="@style/dashboard_values"
                 android:layout_weight="1"/>

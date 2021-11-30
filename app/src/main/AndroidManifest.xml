@@ -14,16 +14,20 @@
             android:label="@string/Cadastro_title"></activity>
         <activity
             android:name=".NovoPesoActivity"
-            android:label="@string/Cadastro_title"></activity>
-        <activity android:name=".DashBoardActivity" />
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:label="@string/Cadastro_title">
+
+        </activity>
+        <activity android:name=".DashBoardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
         </activity>
 
         <meta-data

@@ -27,7 +27,13 @@ fun calcularIdade(dataNascimento: String): Int {
     // Period.between = calcula o período de tempo entre datas
     val idade = Period.between(nascimento, hoje).years
 
-    Log.i("xpto", idade.toString())
-
     return idade
+}
+
+fun transformarData(dataFormatoAntigo:String):String {
+    val data = dataFormatoAntigo.split("-")
+
+    val dataFormatoNormal = data[2] + "/" + data[1] + "/" + data[0]
+
+    return dataFormatoNormal
 }
