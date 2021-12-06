@@ -9,15 +9,14 @@
         android:roundIcon="@drawable/ic_app"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImcApp">
+        <activity android:name=".ui.PesagemActivity2"></activity>
         <activity
-            android:name=".NovoUsuarioActivity"
+            android:name=".ui.NovoUsuarioActivity"
+            android:label="@string/Cadastro_title" />
+        <activity
+            android:name=".ui.NovoPesoActivity"
             android:label="@string/Cadastro_title"></activity>
-        <activity
-            android:name=".NovoPesoActivity"
-            android:label="@string/Cadastro_title">
-
-        </activity>
-        <activity android:name=".DashBoardActivity">
+        <activity android:name=".ui.DashBoardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:screenOrientation="portrait">
 
         </activity>

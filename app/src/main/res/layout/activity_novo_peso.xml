@@ -45,23 +45,28 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/peso_title"
                 android:paddingStart="20dp"
+                android:text="@string/peso_title"
+                android:textColor="@color/text"
                 android:textFontWeight="@integer/material_motion_duration_short_2"
-                style="@style/cadastro_peso_titulo"/>
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:layout_marginTop="10dp"
-                android:paddingStart="15dp"
-                android:paddingEnd="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/info_peso"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:drawableStart="@drawable/info_24"
                 android:drawablePadding="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/info_peso"
+                android:textAllCaps="false"
+                android:textColor="@color/secondary"
                 android:textFontWeight="@integer/material_motion_duration_long_1"
-                style="@style/info_peso"/>
+                android:textSize="14sp"
+                android:textStyle="italic" />
 
         </LinearLayout>
 
@@ -137,11 +142,12 @@
 
             <Button
                 android:id="@+id/button_registrar"
+                style="@style/button_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Registrar"
-                style="@style/button_login"/>
+                android:text="Registrar peso"
+                android:textAllCaps="true" />
 
         </LinearLayout>
 
